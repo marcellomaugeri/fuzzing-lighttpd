@@ -12,7 +12,7 @@ strstr() {
 }
 
 #Commands for afl-based fuzzers (e.g., aflnet, aflnwe)
-if $(strstr $FUZZER "afl") then
+if $(strstr $FUZZER "afl"); then
 
   TARGET_DIR=${TARGET_DIR:-"lighttpd1"}
   INPUTS=${WORKDIR}/in-http
